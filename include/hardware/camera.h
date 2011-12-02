@@ -109,6 +109,11 @@ typedef struct preview_stream_ops {
                 int *count);
     int (*lock_buffer)(struct preview_stream_ops* w,
                 buffer_handle_t* buffer);
+
+	// star add
+	int (*perform)(struct preview_stream_ops* w, int cmd0, int cmd1, int value);
+	int (*set_buffers_geometryex)(struct preview_stream_ops* pw,
+        		int w, int h, int format,int screenid);
 } preview_stream_ops_t;
 
 struct camera_device;

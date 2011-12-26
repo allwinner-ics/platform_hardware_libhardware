@@ -126,15 +126,17 @@ enum {
 /* possible overlay formats */
 enum 
 {
-    HWC_FORMAT_RGBA_8888    = HAL_PIXEL_FORMAT_RGBA_8888,
-    HWC_FORMAT_RGB_565      = HAL_PIXEL_FORMAT_RGB_565,
-    HWC_FORMAT_BGRA_8888    = HAL_PIXEL_FORMAT_BGRA_8888,
+    HWC_FORMAT_MINVALUE     = 0x50,
+    HWC_FORMAT_RGBA_8888    = 0x51,
+    HWC_FORMAT_RGB_565      = 0x52,
+    HWC_FORMAT_BGRA_8888    = 0x53,
     HWC_FORMAT_YCbYCr_422_I = 0x54,
     HWC_FORMAT_CbYCrY_422_I = 0x55,
     HWC_FORMAT_MBYUV420		= 0x56,
     HWC_FORMAT_MBYUV422		= 0x57,
     HWC_FORMAT_YUV420PLANAR	= 0x58,
-    HWC_FORMAT_DEFAULT      = 0x99    // The actual color format is determined
+    HWC_FORMAT_DEFAULT      = 0x99,    // The actual color format is determined
+    HWC_FORMAT_MAXVALUE     = 0x100
 };
 
 enum
@@ -237,6 +239,16 @@ typedef struct tag_VideoInfo
     unsigned short              eAspectRatio;   //the source picture aspect ratio
     unsigned short              color_format;   //the source picture color format
 }videoinfo_t;
+
+typedef struct tag_Video3DInfo
+{
+	unsigned int width;
+	unsigned int height;
+	unsigned int format;
+	unsigned int _3d_mode;
+	unsigned int display_mode;
+	unsigned int is_mode_changed;
+}video3Dinfo_t;
 
 typedef struct tag_PanScanInfo
 {

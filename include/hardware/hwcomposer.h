@@ -172,37 +172,39 @@ enum {
     /* enable or disable dithering */
     HWC_LAYER_DITHER        	= 3,
     /* transformation applied (this is a superset of COPYBIT_ROTATION_DEG) */
-    HWC_LAYER_SETINITPARA    	= 4,
+    HWC_LAYER_SETINITPARA,
     /* set videoplayer init overlay parameter */
-    HWC_LAYER_SETVIDEOPARA    = 5,
+    HWC_LAYER_SETVIDEOPARA,
     /* set videoplayer play frame overlay parameter*/
-    HWC_LAYER_SETFRAMEPARA    = 6,
+    HWC_LAYER_SETFRAMEPARA,
     /* get videoplayer play frame overlay parameter*/
-    HWC_LAYER_GETCURFRAMEPARA = 7,
+    HWC_LAYER_GETCURFRAMEPARA,
     /* query video blank interrupt*/
-    HWC_LAYER_QUERYVBI        = 8,
+    HWC_LAYER_QUERYVBI,
     /* set overlay screen id*/
-    HWC_LAYER_SETSCREEN       = 9,
+    HWC_LAYER_SETSCREEN,
     
-    HWC_LAYER_SHOW            = 10,
+    HWC_LAYER_SHOW,
+
+    HWC_LAYER_RELEASE,
     
-    HWC_LAYER_SET3DMODE       = 11,
-    HWC_LAYER_SETFORMAT       = 12,
+    HWC_LAYER_SET3DMODE,
+    HWC_LAYER_SETFORMAT,
 
-    HWC_LAYER_VPPON           = 13,
-    HWC_LAYER_VPPGETON        = 14,
+    HWC_LAYER_VPPON,
+    HWC_LAYER_VPPGETON,
 
-    HWC_LAYER_SETLUMASHARP    = 15,
-    HWC_LAYER_GETLUMASHARP    = 16,
+    HWC_LAYER_SETLUMASHARP,
+    HWC_LAYER_GETLUMASHARP,
 
-    HWC_LAYER_SETCHROMASHARP    = 17,
-    HWC_LAYER_GETCHROMASHARP    = 18,
+    HWC_LAYER_SETCHROMASHARP,
+    HWC_LAYER_GETCHROMASHARP,
 
-    HWC_LAYER_SETWHITEEXTEN    = 19,
-    HWC_LAYER_GETWHITEEXTEN    = 20,
+    HWC_LAYER_SETWHITEEXTEN,
+    HWC_LAYER_GETWHITEEXTEN,
 
-    HWC_LAYER_SETBLACKEXTEN    = 21,
-    HWC_LAYER_GETBLACKEXTEN    = 22,
+    HWC_LAYER_SETBLACKEXTEN,
+    HWC_LAYER_GETBLACKEXTEN,
 };
 
 /* enable/disable value setParameter() */

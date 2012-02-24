@@ -282,6 +282,7 @@ struct display_device_t
     int (*getdisplaymode)      	(struct display_device_t *dev);
     
     int (*getdisplaycount)	    (struct display_device_t *dev);
+	int (*setdisplaybacklightmode)(struct display_device_t *dev, int mode);
 };
 
 

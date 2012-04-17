@@ -289,6 +289,10 @@ typedef struct tag_LIBHWCLAYERPARA
     unsigned long               uPts;               // time stamp of the frame (ms?)
     unsigned char				first_frame_flg;
     unsigned long               number;
+    unsigned long   flag_addr;//dit maf flag address
+    unsigned long   flag_stride;//dit maf flag line stride
+    unsigned char  maf_valid;
+    unsigned char  pre_frame_valid;
 }libhwclayerpara_t;
 
 /*****************************************************************************/
